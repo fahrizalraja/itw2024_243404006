@@ -1,0 +1,42 @@
+body {
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+
+}
+ p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ h1 {
+    font-family:'comic sans ms';
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+ }
+ #ini{
+    text-align: center;
+    color: orange;
+ }
+ #tes {
+    color: red;
+    text-align: center;
+ }
+ #we {
+    line-height: 2;
+    text-align: center;
+ }
+ h4 {
+    text-align: right;
+ }
+ #aja {
+    text-decoration: none;
+ }
+ #aja:hover {
+    color: white;
+    background-color: blue;
+ }
+ h4 {
+    text-align: center;
+ }
+ h3 {
+    text-align: center;
+ }

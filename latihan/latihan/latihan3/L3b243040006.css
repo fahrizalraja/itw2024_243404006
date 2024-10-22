@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+}
+ p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ h1 {
+    font-family:'comic sans ms';
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+ }
+ #ini{
+    text-align: center;
+    color: orange;
+ }
+ #tes{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ #we {
+    line-height: 2;
+    text-align: center;
+ }
+ h4 {
+    text-align: right;
+ }
