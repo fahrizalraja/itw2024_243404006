@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    /* padding: 20px 0; */
+    color: rgb(149, 149, 149);
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: "Bokor", system-ui;
+    letter-spacing: 3px;
+    font-size: 25px;
+    z-index: auto;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0,8em;
+}
+
+nav ul li a:hover {
+color: rgb(0, 0, 0);
+background-color: rgb(178, 247, 4);
+}
+
+/* hamburger menu */
+.menu-toogle {
+display: none;
+flex-direction: column;
+height: 20px;
+justify-content: space-between;
+position: relative;
+}
+
+.menu-toogle input {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    left: -3;
+    top: -1;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toogle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+/* hamburger menu animation */
+.menu-toogle span:nth-child(2) {
+transform-origin: 0 0;
+}
+
+.menu-toogle span:nth-child(4) {
+transform-origin: 0 100%;
+}
+
+.menu-toogle input:checked ~ span:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) {
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg) translate(-1px, 0px);
+    }
+    
+    .menu-toogle input:checked ~ span:nth-child(3) {
+        opacity: 0;
+        transform: scale(0);
+        }
+        
+
+
+/* responsive breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 768px) {
+    .menu-toogle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(31, 32, 31);
+        width: 70%;
+        transform: translateX(100%);
+        z-index: -1;
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: auto;
+    }
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../latihan6/img/background.jpeg);
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    color: rgb(149, 149, 149);
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+/* latihan 2 */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+    color: white;
+}
+
+.container-dua h4  {
+    text-align: center;
+    margin-bottom: 10;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu {
+    background-color: rgb(42, 41, 41);
+    text-align: center;
+}
+
+.layanan.dua {
+    background-color: black;
+    text-align: center;
+}
+
+.layanan.tiga {
+    background-color: rgb(42, 41, 41);
+    text-align: center;
+}
+
+/* latihan 4 */
+.container-empat {
+    width: 800px;
+    margin: 20% auto;
+display: flex;
+}
+
+
+.white {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(42, 41, 41);
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.headline {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.card .header-satu {
+    height: 150px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url(../latihan6/img/epic.png);
+}
+.card .header-dua {
+    height: 150px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url(../latihan6/img/glory.png);
+}
+.card .header-tiga {
+    height: 150px;
+    width: 250px;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url(../latihan6/img/legend.png);
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.card.besar {
+    transform: scale(1.12);
+}
+
+/* latihan 5 */
+
+.content button {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(255, 179, 0);
+    display: flex;
+}
+
+.kotak {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(78, 76, 76);
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+.kotak li {
+    list-style: none;
+}
+
+.order h1 {
+    padding-bottom: 40;
+    color: black;
+}
+
+.kolom-utama {
+    text-align: center;
+}
+.kolom-utama h2 {
+    color: yellow;
+}
+
+
+.end {
+    color: black;
+    display: flex;
+    background-color: rgb(200, 152, 5);
+    border: 20px solid;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 20px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+/* responsive */
+
+@media( min-width: 600px ) {
+.container-dua {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan {
+    width: 30%;
+}
+
+.thumbnail {
+    width: 25%;
+}
+}
+
