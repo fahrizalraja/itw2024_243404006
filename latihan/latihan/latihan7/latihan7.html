@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet"/>
+    <title>One piece Merch</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    
+<div class="container">
+<header class="header">
+    <div class="hero">
+        <h2 class="heading">One Piece Merch Shop</h2>
+        <p class="sub-heading">Merchands</p>
+    </div>
+    <div class="features-1">
+        <h4 class="price">IDR 249k</h4>
+        <p class="item">Katana</p>
+    </div>
+    <div class="features-2">
+        <h4 class="price">IDR 199K</h4>
+        <p class="item">Hoodie</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <div class="menu-toogle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="brand">
+        <h1>One Piece Merch</h1>
+    </div>
+    <ul class="menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">Product</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    </ul>
+</nav>
+<section class="services">
+    <div class="service">
+        <div class="icon">📖</div>
+        <h3>Komik</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, soluta.</p>
+    </div>
+    <div class="service">
+        <div class="icon">👚</div>
+        <h3>Pakaian</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, soluta.</p>
+    </div>
+    <div class="service">
+        <div class="icon">⚔️</div>
+        <h3>Katana</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, soluta.</p>
+    </div>
+    <div class="service">
+        <div class="icon">📜</div>
+        <h3>Poster</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, soluta.</p>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Gallery</h2>
+    <img src="../latihan7/img/gallery/vol1.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol2.jpg" alt="" />
+    <img src="../latihan7/img/gallery/vol3.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol4.jpg" alt="" />
+    <img src="../latihan7/img/gallery/vol5.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol6.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol7.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol8.jpeg" alt="" />
+    <img src="../latihan7/img/gallery/vol9.jpg" alt="" />
+</section>
+
+</div>
+<script>
+    const menuToggle = document.querySelector('.menu-toogle input');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
+
+</script>
+</body>
+</html>
